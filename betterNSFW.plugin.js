@@ -31,7 +31,7 @@ betterNSFW.prototype.start = function () {
 betterNSFW.prototype.changeChannelNames = function() {
 
 	var aTags = document.getElementsByClassName("channel-name");
-	var searchText = "nsfw";
+	var searchText = "nsfw-";
 	for (var i = 0; i < aTags.length; i++) {
 		if (aTags[i].textContent.indexOf(searchText) >= 0){
 			var replacement = aTags[i].textContent;
